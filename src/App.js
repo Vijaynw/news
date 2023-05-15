@@ -6,6 +6,7 @@ import Navbar from './component/Navbar';
 import News from './component/News';
 import { Routes,Route } from "react-router-dom";
 import Error from "./component/Error";
+import About from "./component/About";
 export default class App extends Component {
     
 render() {
@@ -16,7 +17,7 @@ return(
     <Navbar/>
         <Routes>
 <Route path="/" element={<News/>} ></Route>
-<Route path="/about" element={"about"}></Route>
+<Route path="/about" element={<About/>}></Route>
 <Route path="*" element={<Error/>}></Route>
     {/* <News pageSize={4}/> */}
         </Routes>
