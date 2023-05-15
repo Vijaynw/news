@@ -1054,8 +1054,8 @@ export default class News extends Component {
     render() {
         return (
           <>
-                <h2>NewsMonkey Top</h2>
-            <div className='container my-2'>
+                <h2>Top</h2>
+            <div className='container d-flex justify-content-around my-2'>
               {this.state.loading&&<Spinner/>}
                 {/* This is News Component */}
                 
