@@ -5,7 +5,7 @@ import React ,{Component} from 'react';
 import Navbar from './component/Navbar';
 import News from './component/News';
 import { Routes,Route } from "react-router-dom";
-
+import Error from "./component/Error";
 export default class App extends Component {
     
 render() {
