@@ -1386,12 +1386,12 @@ export default class News extends Component {
     this.state = {
       articles: this.articles,
       loading: false,
-      page: 1,
+      page: 2,
     };
   }
   async componentDidMount() {
     this.setState({ loading: true });
-    let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=b2da89043bab4d25b3efff3f21101603&page=${this.props.pageSize}&pageSize=${this.props.pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=b2da89043bab4d25b3efff3f21101603&page=${this.props.pageSize}&pageSize=${this.props.pageSize}`;
     let data = await fetch(url);
     let parsedData = await data.json();
     this.setState({
