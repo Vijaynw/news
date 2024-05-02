@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NewsItem = ({ title, description, imageUrl, newsUrl }) => {
   console.log(newsUrl)
@@ -22,9 +23,9 @@ const NewsItem = ({ title, description, imageUrl, newsUrl }) => {
       </div>
       <div className='bg-black absolute '>
 
-        <a href={newsUrl} target="_blank" className="btn btn-dark btn-sm">
+        <Link href={newsUrl} target="_blank" className="btn btn-dark btn-sm">
           Read More
-        </a>
+        </Link>
       </div>
     </div>
 

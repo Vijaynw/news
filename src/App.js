@@ -7,7 +7,6 @@ import News from './component/News';
 import { Routes,Route } from "react-router-dom";
 import Error from "./component/Error";
 import About from "./component/About";
-import NewsPage from "./component/News copy";
 export default class App extends Component {
     
 render() {
@@ -17,9 +16,9 @@ return(
     <div>
     <Navbar/>
         <Routes>
-            <Route path="/" element={<NewsPage/>} ></Route>
-            <Route path="/about" element={<About/>}></Route>
-            <Route path="*" element={<Error/>}></Route>
+        <Route path="/" element={<News/>} ></Route>
+        <Route path="/about" element={<About/>}></Route>
+        <Route path="*" element={<Error/>}></Route>
     {/* <News pageSize={4}/> */}
         </Routes>
     
